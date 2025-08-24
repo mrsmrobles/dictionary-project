@@ -1,0 +1,20 @@
+.Dictionary section {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+.Dictionary input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+.Dictionary .hint {
+  font-size: 11px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 3px;
+}
