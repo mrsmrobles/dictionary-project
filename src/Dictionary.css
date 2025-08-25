@@ -1,20 +1,36 @@
+.Dictionary {
+  margin: 0 auto;
+}
 .Dictionary section {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: white;
-  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 30px;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  margin: 30px;
+  margin: 20px auto;
+  max-width: 800px;
 }
 .Dictionary input {
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  width: 300px;
+  border: 1.5px solid #9185c0;
+  border-radius: 5px;
   padding: 6px 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.Dictionary form {
+  display: flex;
+  justify-content: center;
 }
 .Dictionary .hint {
-  font-size: 11px;
-  text-align: left;
+  text-align: center;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
   padding-top: 3px;
+}
+.part-of-speech {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 10px 0;
 }

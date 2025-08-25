@@ -4,10 +4,9 @@ import "./Dictionary.css";
 import Results from "./Results";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("sunset");
+  let [keyword, setKeyword] = useState("hello");
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
-
 
   function handleResponse(response) {
     console.log(response.data);
@@ -22,8 +21,6 @@ export default function Dictionary() {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -32,31 +29,32 @@ export default function Dictionary() {
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
-  
+
   function load() {
     setLoaded(true);
     search();
   }
 
-if (loaded) {
-  return (
-    <div className="Dictionary">
-      <section>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            autoFocus={true}
-            placeholder="Search for a word.."
-            onChange={handleKeywordChange}
-          />
-        </form>
-        <div className="hint">ex: sunset, book, swimming...</div>
-      </section>
-      <Results results={results} />
-    </div>
-  );
-} else {
- load();
- return "Loading..";
-}
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="search"
+              autoFocus={true}
+              placeholder="Search for a word..."
+              onChange={handleKeywordChange}
+            />
+          </form>
+          <div className="hint">ex: sunset, book, swimming...</div>
+        <Results results={results} />
+        </section>
+        
+      </div>
+    );
+  } else {
+    load();
+    return "Loading..";
+  }
 }

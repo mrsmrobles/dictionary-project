@@ -1,14 +1,26 @@
 .Results {
-  color: #303030;
+  color: #626262;
 }
 
 .Results h2 {
   font-weight: bold;
-  line-height: ;
-  text-transform: capitalize;
+  color: #9185c0;
 }
 
 .Results h3 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #a9a2c6;
 }
+
+.definition {
+  color: #626262;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.synonyms em {
+  padding: 25px;
+  font-weight: bold;
+  color: #d466a8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
