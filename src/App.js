@@ -12,7 +12,7 @@ function App() {
         <Dictionary />
       </main>
       <footer>
-        <p>
+        <p className="footer">
           Coded by{" "}
           <a
             href="https://www.linkedin.com/in/madison-robles-40155b235/"
