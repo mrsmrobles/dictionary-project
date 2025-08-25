@@ -1,0 +1,12 @@
+.definition {
+  color: #626262;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.part-of-speech {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 10px 0;
+}

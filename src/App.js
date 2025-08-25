@@ -11,7 +11,31 @@ function App() {
         <h1>Dictionary</h1>
         <Dictionary />
       </main>
-      <footer className="App-footer">Coded by Madison Robles</footer>
+      <footer>
+        <p>
+          Coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/madison-robles-40155b235/"
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            Madison Robles
+          </a>
+          . Open-sourced on{" "}
+          <a
+            href="https://github.com/mrsmrobles/dictionary-project"
+            target="blank"
+            rel="noreferrer noopener"
+          >
+            Github
+          </a>{" "}
+          and hosted on{" "}
+          <a href="app.netlify.com" target="blank" rel="noreferrer noopener">
+            Netlify
+          </a>
+          .
+        </p>
+      </footer>{" "}
     </div>
   );
 }
